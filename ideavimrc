@@ -1,3 +1,7 @@
+" plugins!
+set which-key               " Download which key extension in idea
+set NERDTree
+
 " sane defaults
 set number                  " line numbers
 set hlsearch                " highlight search occurrences
@@ -8,7 +12,6 @@ set scrolloff=5             " keep some lines before and after cursor visible
 set relativenumber
 set clipboard=unnamedplus,unnamed,ideaput   " use system clipboard
 
-set which-key               " Download which key extension in idea
 
 " Necessary for which-key
 set notimeout
@@ -46,3 +49,7 @@ nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
+
+" Map gc to toggle line comments
+nmap gc :action CommentByLineComment<CR>
+vmap gc :action CommentByLineComment<CR>
