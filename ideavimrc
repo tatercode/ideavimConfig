@@ -1,0 +1,48 @@
+" sane defaults
+set number                  " line numbers
+set hlsearch                " highlight search occurrences
+set ignorecase              " ignore case if only lowercase
+set smartcase               " smart case when uppercase letters
+
+set scrolloff=5             " keep some lines before and after cursor visible
+set relativenumber
+set clipboard=unnamedplus,unnamed,ideaput   " use system clipboard
+
+set which-key               " Download which key extension in idea
+
+" Necessary for which-key
+set notimeout
+set timeoutlen=5000
+
+let mapleader = " "
+
+"""""""""""""""""""""""""""""""""""""""
+" Similar to my neovim layout
+
+nmap <leader>ff :action GotoFile<CR>
+inoremap jk <Esc>
+
+" change font size
+nmap <leader>+ :action EditorIncreaseFontSize<CR>
+nmap <leader>- :action EditorDecreaseFontSize<CR>
+
+" Change tabs
+nmap <leader>tn :action NextTab<CR>
+nmap <leader>tp :action PreviousTab<CR>
+nmap <leader>tx :action CloseContent<CR>
+
+nmap <leader>ee :action ActivateProjectToolWindow<CR>
+nmap <leader>ex :action HideAllWindows<CR>
+
+" Split panes
+" Horizontal split
+nmap <leader>sh :action SplitHorizontally<CR>
+
+" Vertical split
+nmap <leader>sv :action SplitVertically<CR>
+
+" Navigate between splits
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
